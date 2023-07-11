@@ -1,0 +1,26 @@
+<main>
+    <form (ngSubmit)="submitForm()" #supportForm="ngForm">
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+        </div>
+        <div>
+          <label for="topic">Tema:</label>
+          <input type="text" id="topic" name="topic" [(ngModel)]="formData.topic" required>
+        </div>
+        <div>
+          <label for="description">Descripción:</label>
+          <textarea id="description" name="description" [(ngModel)]="formData.description" required></textarea>
+        </div>
+        <div class="buttons">
+          <button type="submit">Enviar</button>
+          <button type="button" (click)="cancelForm()">Cancelar</button>
+          <button type="button" (click)="resetForm()">Reiniciar</button>
+        </div>
+      </form>      
+</main>
+<app-footer></app-footer>
