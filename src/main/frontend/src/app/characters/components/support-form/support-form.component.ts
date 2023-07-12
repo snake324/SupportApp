@@ -17,7 +17,7 @@ export class SupportFormComponent {
   constructor(private router: Router) {}
 
   submitForm() {
-    this.router.navigate(['']);
+    this.goToHome();
   }
 
   cancelForm() {
