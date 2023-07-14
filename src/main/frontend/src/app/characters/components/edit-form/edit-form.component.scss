@@ -1,0 +1,68 @@
+.form-container {
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #9EAEE7;
+    font-weight: bold;
+
+    h2{
+        text-align: center;
+        font-size: medium;
+    }
+
+    .form-area {
+        margin-bottom: 15px;
+  
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          padding: 5px;
+          border: 0px;
+          border-radius: 10px;
+        }
+      }
+}
+  
+.container-buttons {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "button-enviar button-cancelar";
+    padding: 10px;
+    max-width: 90%;
+    background-color: #5D5BDA;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+
+  button {
+    font-size: large;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;  
+  }
+
+  button.enviar {
+    background-color: #7EFF7B;
+    box-shadow: -4px 4px 4px 0px green;
+    margin-left: 10%;
+  }
+  
+  button.cancelar {
+    background-color: #FF7171;  
+    box-shadow: -4px 4px 4px 0px red;
+    margin-left: 40%;
+  }
+}

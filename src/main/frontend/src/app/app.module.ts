@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './global/footer/footer.component';
 import { SupportRequestFormComponent } from './characters/views/support-request-form/support-request-form.component';
 import { SupportFormComponent } from './characters/components/support-form/support-form.component';
+import { EditSupportRequestComponent } from './characters/views/edit-support-request/edit-support-request.component';
+import { EditFormComponent } from './characters/components/edit-form/edit-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     SupportRequestFormComponent,
-    SupportFormComponent
+    SupportFormComponent,
+    EditSupportRequestComponent,
+    EditFormComponent
   ],
   imports: [
     BrowserModule,
