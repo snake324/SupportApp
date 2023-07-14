@@ -1,7 +1,7 @@
 <main>
   <div class="form-container">
     <h2>Formulario para solicitar soporte</h2>
-    <form (ngSubmit)="submitForm()" #supportForm="ngForm">
+    <form (ngSubmit)="goToListSupportRequest()" #supportForm="ngForm">
       <div class="form-area">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
@@ -22,7 +22,7 @@
   </div>
   <div class="container-buttons">
     <div class="button-enviar">
-      <button type="submit" (click)="submitForm()" class="enviar">Enviar</button>
+      <button type="submit" (click)="goToListSupportRequest()" class="enviar">Enviar</button>
     </div>
     <div class="button-cancelar">
       <button type="button" (click)="cancelForm()" class="cancelar">Cancelar</button>

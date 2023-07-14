@@ -16,16 +16,18 @@ export class SupportFormComponent {
 
   constructor(private router: Router) {}
 
-  submitForm() {
-    this.goToHome();
+  goToListSupportRequest() {
+    const queryParams = {
+    name: this.formData.name,
+    email: this.formData.email,
+    topic: this.formData.topic,
+    description: this.formData.description
+  };
+    this.router.navigate([''], { queryParams });
   }
 
   cancelForm() {
     this.resetForm();
-    this.goToHome();
-  }
-
-  goToHome() {
     this.router.navigate(['']);
   }
 
