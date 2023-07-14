@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ListSupportRequestComponent {
 
-    formData: any;
+  formData: any;
 
   constructor(private route: ActivatedRoute) {}
 
