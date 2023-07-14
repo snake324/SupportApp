@@ -1,5 +1,8 @@
 <h2>Solicitudes</h2>
-<p><strong>Nombre:</strong> {{ formData.name }}</p>
-<p><strong>Email:</strong> {{ formData.email }}</p>
-<p><strong>Tema:</strong> {{ formData.topic }}</p>
-<p><strong>Descripción:</strong> {{ formData.description }}</p>
+<div *ngFor="let request of supportRequests">
+  <p><strong>Nombre:</strong> {{ request.name }}</p>
+  <p><strong>Email:</strong> {{ request.email }}</p>
+  <p><strong>Tema:</strong> {{ request.topic }}</p>
+  <p><strong>Descripción:</strong> {{ request.description }}</p>
+  <hr>
+</div>

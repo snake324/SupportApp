@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { SupportFormApiService } from '../../service/support-form-api.service';
 
 @Component({
   selector: 'app-list-support-request',
@@ -8,14 +8,21 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ListSupportRequestComponent {
 
-  formData: any;
+  supportRequests: any[] = [];
 
-  constructor(private route: ActivatedRoute) {}
+
+  constructor(private supportFormApiService: SupportFormApiService) {}
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      this.formData = params;
+    this.getSupportRequests();
+  }
+
+  getSupportRequests() {
+    this.supportFormApiService.getSupportRequests()
+      .subscribe((requests: any[]) => {
+        this.supportRequests = requests;
     });
+    
   }
 
 }
