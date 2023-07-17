@@ -11,6 +11,7 @@ import { SupportFormComponent } from './characters/components/support-form/suppo
 import { EditSupportRequestComponent } from './characters/views/edit-support-request/edit-support-request.component';
 import { EditFormComponent } from './characters/components/edit-form/edit-form.component';
 import { ListSupportRequestComponent } from './characters/views/list-support-request/list-support-request.component';
+import { HeaderComponent } from './global/header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListSupportRequestComponent } from './characters/views/list-support-req
     SupportFormComponent,
     EditSupportRequestComponent,
     EditFormComponent,
-    ListSupportRequestComponent
+    ListSupportRequestComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
